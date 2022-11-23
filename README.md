@@ -4,11 +4,11 @@ repo tugas
 ## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 bisa saja sebenarnya, tapi _model_ sangat berguna untuk mengelompokkan data-data terkait dalam satu _class_ sehingga adanya _model_ sangat meningkatkan _readability_.
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
-FutureBuilder - menjalankan fungsi _asynchronous_ dan menampilkan _widget_ berdasarkan _return_ yang didapat dari fungsi tersebut.
-RichText - mirip seperti `Text` dengan fitur-fitur tambahan yang dapat digunakan untuk mengubah gaya teks.
+FutureBuilder - menjalankan fungsi _asynchronous_ dan menampilkan _widget_ berdasarkan _return_ yang didapat dari fungsi tersebut.<br>
+RichText - mirip seperti `Text` dengan fitur-fitur tambahan yang dapat digunakan untuk mengubah gaya teks.<br>
 TextSpan - merupakan _child_ dari RichText dan digunakan untuk membatasi pengubahan gaya pada rangkaian teks.
 ## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
-pengambilan data berawal dari pemanggilan fungsi http.get. Data yang didapat dari pemanggilan fungsi itu akan disimpan dalam state (bentuknya Future). Lalu, data yang JSON tersebut akan di parse ke objek model. Terakhir, FutureBuilder akan merender data tersebut dengan widget yang bersesuaian.
+Pengambilan data berawal dari pemanggilan fungsi http.get. Data yang didapat dari pemanggilan fungsi itu akan disimpan dalam state (bentuknya Future). Lalu, data yang JSON tersebut akan di parse ke objek model. Terakhir, FutureBuilder akan merender data tersebut dengan widget yang bersesuaian.
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 Pertama, saya menambahkan tombol navigasi pada drawer/hamburger yang akan melakukan routing ke halaman mywatchlist. Lalu, saya perlu membuat sebuah file dart yang merupakan model untuk mywatchlist. Kemudian, saya membuat halaman mywatchlist yang berisi data-data watchlist yang ada pada endpoint JSON. Setelah itu, embuat navigasi 
 Menambahkan halaman detail untuk setiap mywatchlist yang ada pada daftar tersebut.
