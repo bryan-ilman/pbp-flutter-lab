@@ -1,7 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:pbp_flutter_lab/budgetData.dart';
 
-import 'budgetModel.dart';
+import 'models/budgetModel.dart';
 import 'main.dart';
 
 // ignore: camel_case_types
